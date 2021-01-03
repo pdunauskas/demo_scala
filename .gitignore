@@ -1,4 +1,50 @@
-# Project exclude paths
-/project/target/
-/target/
-/target/scala-2.13/classes/
+# Created by https://www.toptal.com/developers/gitignore/api/sbt,scala
+# Edit at https://www.toptal.com/developers/gitignore?templates=sbt,scala
+
+### SBT ###
+# Simple Build Tool
+# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
+
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.history
+.cache
+.lib/
+.bsp
+
+### Scala ###
+*.class
+*.log
+
+# End of https://www.toptal.com/developers/gitignore/api/sbt,scala
+
+
+# sbt
+# (may want to keep parts of 'project')
+bin/
+project/
+build/
+
+# eclipse
+build
+.classpath
+.project
+.settings
+.worksheet
+
+# intellij idea
+*.iml
+*.ipr
+*.iws
+.idea
+
+# mac
+.DS_Store
+
+# other?
+.scala_dependencies
+.cache-main
