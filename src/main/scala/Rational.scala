@@ -14,9 +14,7 @@ class Rational (n: Int, d: Int) {
     )
 
   def * (that: Rational): Rational =
-    new Rational(
-      numer * that.numer, denom * that.denom
-    )
+    new Rational(numer * that.numer, denom * that.denom)
 
   override def toString: String =
     if (numer == denom) s"$numer" else s"$numer/$denom"
@@ -24,6 +22,8 @@ class Rational (n: Int, d: Int) {
   private def gcd(a: Int, b: Int): Int =
     if (b == 0) a else gcd(b, a % b)
 }
+
+
 object Rational extends App {
   val r = new Rational(2, 3)
   val t = new Rational(1, 3)
@@ -33,7 +33,12 @@ object Rational extends App {
   println((r+t).toString)
 
   println((r*t).toString)
+  println((r*3).toString)
+  println((4).toString)
+// this is an advanced technique. instead of trying to use r * 2 i can not do 2 * r
   implicit def intToRational(x: Int): Rational = new Rational(x)
   println((2*r).toString)
+  println(4.toString)
+
 
 }

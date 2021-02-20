@@ -8,3 +8,5 @@ s.charAt(3)
 s.indexOf('o')
 s.indexOf('o', 1)
 
+import Rational._
+
