@@ -39,6 +39,4 @@ object Rational extends App {
   implicit def intToRational(x: Int): Rational = new Rational(x)
   println((2*r).toString)
   println(4.toString)
-
-
 }
