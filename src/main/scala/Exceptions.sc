@@ -24,3 +24,8 @@ finally {
     println("Close fucking file")
 }
 
+// be carefull about finally statement behavior
+def f() : Int = try return 1 finally return 2
+print(f()) // returns 2
+def g(): Int = try 1 finally 2
+print(g()) // returns 1
