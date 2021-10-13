@@ -5,4 +5,5 @@ object Main extends App {
   println(x.checksum())
   // this is with singleton object
   println(ChecksumAccumulator.calculate("nieko sau kodas aha"))
+  print("aas")
 }
