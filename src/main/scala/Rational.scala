@@ -4,6 +4,7 @@ class Rational (n: Int, d: Int) {
 
   val numer: Int = n / g
   val denom: Int = d / g
+  val a = 8
 
   def this(n: Int) = this(n, 1)
 
